@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/chat_left_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/received_chat_bubble"
+        android:fontFamily="@font/roboto"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="hellohellohellohelooadda" />
+
+    <TextView
+        android:id="@+id/chat_timeStamp_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/roboto"
+        android:gravity="start"
+        android:paddingStart="5dp"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="@id/chat_left_textView"
+        app:layout_constraintTop_toBottomOf="@+id/chat_left_textView"
+        tools:text="01.01.0000"
+        tools:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/chat_left_author_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/roboto"
+        android:gravity="start"
+        android:paddingStart="5dp"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@id/chat_timeStamp_left"
+        app:layout_constraintTop_toBottomOf="@+id/chat_timeStamp_left"
+        tools:text="Joey"
+        tools:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/chat_right_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/sent_chat_bubble"
+        android:fontFamily="@font/roboto"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="hellohellohellohelooadda" />
+
+    <TextView
+        android:id="@+id/chat_timeStamp_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/roboto"
+        android:gravity="start"
+        android:paddingStart="5dp"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="@id/chat_right_textView"
+        app:layout_constraintTop_toBottomOf="@+id/chat_right_textView"
+        tools:text="01.01.0000"
+        tools:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/chat_right_author_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/roboto"
+        android:gravity="start"
+        android:paddingStart="5dp"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/chat_timeStamp_right"
+        app:layout_constraintTop_toBottomOf="@+id/chat_timeStamp_right"
+        tools:text="Joey"
+        tools:textColor="@color/black" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
